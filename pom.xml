@@ -18,6 +18,8 @@
         <docker.plugin.version>1.0.0</docker.plugin.version>
         <maven.compile.source>1.8</maven.compile.source>
         <maven.compile.target>1.8</maven.compile.target>
+        <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
+        <lombok.version>1.16.14</lombok.version>
     </properties>
     <modules>
         <module>dome-common</module>
@@ -27,12 +29,14 @@
 
 
     <dependencies>
+        <!--lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.14</version>
+            <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+        <!--spring boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -48,6 +52,18 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <!--nacos 注册中心-->
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>nacos-config-spring-boot-starter</artifactId>
+            <version>${nacos-config-spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>nacos-config-spring-boot-actuator</artifactId>
+            <version>${nacos-config-spring-boot.version}</version>
         </dependency>
     </dependencies>
 

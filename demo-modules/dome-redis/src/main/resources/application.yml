@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: dome-redis
+    jackson:
+        date-format: yyyy-MM-dd HH:mm:ss
+        time-zone: GMT+8
+        default-property-inclusion: non_null
+server:
+    port: ${SERVER_PORT:19993} #启动端口
+
+
+
+
+
+
+
+
