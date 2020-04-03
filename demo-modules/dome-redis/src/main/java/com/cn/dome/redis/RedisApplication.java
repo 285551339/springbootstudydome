@@ -1,7 +1,9 @@
 package com.cn.dome.redis;
 
+import com.cn.dome.redis.config.TestConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
  * @Description
@@ -9,10 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Author zangliulu
  * @date 2020.04.01 14:41
  */
-@SpringBootApplication
+//@SpringBootApplication
 public class RedisApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RedisApplication.class, args);
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(TestConfig.class);
     }
 }
