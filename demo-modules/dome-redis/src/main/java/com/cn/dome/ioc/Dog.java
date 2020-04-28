@@ -1,4 +1,4 @@
-package com.cn.dome.redis;
+package com.cn.dome.ioc;
 
 import lombok.Data;
 

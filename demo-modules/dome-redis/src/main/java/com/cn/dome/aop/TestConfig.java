@@ -1,9 +1,6 @@
 package com.cn.dome.aop;
 
-import com.cn.dome.redis.Dog;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
-import org.springframework.stereotype.Component;
 
 /**
  * @Description
