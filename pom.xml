@@ -20,6 +20,10 @@
         <maven.compile.target>1.8</maven.compile.target>
         <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
         <lombok.version>1.16.14</lombok.version>
+        <tk.mybatis.version>2.0.3</tk.mybatis.version>
+        <pagehelper.version>1.2.5</pagehelper.version>
+        <druid.version>1.1.10</druid.version>
+        <mybatis.version>3.5.1</mybatis.version>
     </properties>
     <modules>
         <module>dome-common</module>
@@ -53,6 +57,21 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
         <!--nacos 注册中心-->
         <dependency>
             <groupId>com.alibaba.boot</groupId>
@@ -65,6 +84,7 @@
             <artifactId>nacos-config-spring-boot-actuator</artifactId>
             <version>${nacos-config-spring-boot.version}</version>
         </dependency>
+
         <!--AspectJ AOP-->
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -90,17 +110,52 @@
             <scope>compile</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.3.0</version>
-        </dependency>
 
         <!--guava依赖-->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>18.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
+        </dependency>
+
+        <!-- 通用mapper -->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>${tk.mybatis.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>${pagehelper.version}</version>
+        </dependency>
+
+        <!-- druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
     </dependencies>
