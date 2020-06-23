@@ -13,11 +13,11 @@ import java.util.Arrays;
 public class Test {
 
     public static void main(String[] args) {
-        /*System.out.println("1111111111111111111");
+        System.out.println("1111111111111111111");
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(TestConfig.class);
         ctx.getBean(DogBiz.class);
         String s ="111";
-        System.out.println("22222222222222222222");*/
+        System.out.println("22222222222222222222");
         //String [] strs = {"flower","flow","flight"};
         //System.out.println(longMaxStr(strs));
         Integer i = null;

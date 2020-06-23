@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.cn.dome</groupId>
-        <artifactId>springbootstudydome</artifactId>
+        <artifactId>spring-boot-study-dome</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <groupId>com.cn.dome.common</groupId>
