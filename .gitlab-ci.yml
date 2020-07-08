@@ -1,0 +1,10 @@
+stages:
+  - deploy
+deploy:
+  stage: deploy
+  script:
+    - /app/soft/gitlab_deploy username demo
+  only:
+    - master
+  tags:
+    - apple
